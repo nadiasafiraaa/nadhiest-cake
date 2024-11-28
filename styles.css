@@ -1,0 +1,228 @@
+/* Reset */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(90deg, #F8F7F4, #F8F7F4);
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.search-form {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-form input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #af7916;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #c7a035;
+    color: #000;
+}
+
+.welcome-section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px; /* Membuat sudut melengkung */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.welcome-section h2 {
+    font-size: 28px;
+    color: #222222;
+    margin-bottom: 15px;
+}
+
+.welcome-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Header Container */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Logo dan Nama Toko */
+.logo img {
+    height: 200px; /* Ukuran logo */
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Navigasi */
+.nav-menu ul {
+    display: flex;
+    gap: 25px; /* Jarak antar menu */
+    justify-content: center; /* Navigasi di tengah */
+}
+
+.nav-menu ul li {
+    display: inline;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #353434;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu ul li a:hover {
+    background: #bbb9b9;
+    color: #353434;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+/* Produk Grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar produk */
+    justify-content: center; /* Pusatkan grid produk */
+    padding: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px; /* Lebar setiap kartu produk */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-card p {
+    color: #555;
+    font-size: 18px;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0;
+    padding:  20px;
+    flex-wrap: wrap;
+    text-align: center; /* Default untuk tampilan kecil */
+}
+
+.footer-section {
+    flex: 2;
+    padding: 10px;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer-section {
+        text-align: left;
+    }
+    .footer-center {
+        text-align: center;
+    }
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+    .nav-menu ul {
+        flex-direction: column; /* Menu navigasi vertikal pada layar kecil */
+        gap: 15px;
+    }
+
+    .product-grid {
+        justify-content: center;
+    }
+
+    .product-card {
+        width: 100%; /* Produk memenuhi layar pada perangkat kecil */
+    }
+}
